@@ -1,7 +1,14 @@
 {
-  "name": "$name$",
-  "version": "$version$",
-  "dependencies": {
-    $END$
-  }
+  "init": false,
+  "name": "",
+  "blogName": "Perblog",
+  "theme": "light",
+  "username": "root",
+  "password": "root",
+  "facebookUrl": "",
+  "twitterUrl": "",
+  "instagramUrl": "",
+  "githubUrl": "",
+  "linkedInUrl": "",
+  "youtubeUrl": ""
 }
