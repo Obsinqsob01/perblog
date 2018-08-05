@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Perblog</title>
+
+    <link rel="stylesheet" href="../static/bulma.min.css"/>
+    <link rel="stylesheet" href="../static/styles.css"/>
+
+
+    <script src="https://use.fontawesome.com/53040a669a.js"></script>
+
+</head>
+<body>
+    <nav class="navbar is-dark">
+        <div class="navbar-brand">
+            <h1 class="title is-1 has-text-light">Perblog</h1>
+        </div>
+    </nav>
+    <div class="container">
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+</html>

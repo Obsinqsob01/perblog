@@ -1,0 +1,88 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="card">
+        <div class="card-content">
+            <h1 class="title is-1 has-text-centered">
+                Initial Config
+            </h1>
+            <h2 class="subtitle is-2">Personal info</h2>
+            <form action="/config/save">
+                <div class="field">
+                    <label class="label">Your name:</label>
+                    <input type="text" class="input" placeholder="Lorem ipsum" name="name">
+                </div>
+                <div class="file">
+                    <label class="file-label">
+                        <input class="file-input" type="file" name="resume">
+                        <span class="file-cta">
+                          <span class="file-icon">
+                            <i class="fa fa-upload"></i>
+                          </span>
+                          <span class="file-label">
+                            Upload a photo
+                          </span>
+                        </span>
+                    </label>
+                </div>
+                <div class="field">
+                    <label class="label">Name of the blog</label>
+                    <input type="text" class="input"
+                           placeholder="Blogname" name="blogname">
+                </div>
+                <div class="field">
+                    <label class="label">Set an username:</label>
+                    <input type="text" class="input" placeholder="rockstar123">
+                </div>
+                <div class="field">
+                    <label class="label">Set a password:</label>
+                    <input type="password" class="input" placeholder="**********">
+                </div>
+                <br>
+                <div class="field">
+                    <h2 class="subtitle is-2">Social Networks</h2>
+                    <div class="field">
+                        <label class="label"><i class="fa fa-facebook-square"></i> Facebook:</label>
+                        <input type="url" class="input" placeholder="https://facebook.com/user" name="facebookUrl">
+                    </div>
+                    <div class="field">
+                        <label class="label"><i class="fa fa-twitter"></i> Twitter:</label>
+                        <input type="url" class="input" placeholder="https://twitter.com/user" name="twitterUrl">
+                    </div>
+                    <div class="field">
+                        <label class="label"><i class="fa fa-instagram"></i> Instagram:</label>
+                        <input type="url" class="input" placeholder="https://instagram.com/user" name="instagramUrl">
+                    </div>
+                    <div class="field">
+                        <label class="label"><i class="fa fa-github"></i> Github:</label>
+                        <input type="url" class="input" placeholder="https://github.com/user" name="githubUrl">
+                    </div>
+                    <div class="field">
+                        <label class="label"><i class="fa fa-linkedin-square"></i> LinkedIn:</label>
+                        <input type="url" class="input" placeholder="https://linkedIn.com/user" name="linkedInUrl">
+                    </div>
+                    <div class="field">
+                        <label class="label"><i class="fa fa-youtube-square"></i>Youtube:</label>
+                        <input type="url" class="input" placeholder="https://youtube.com/user" name="youtubeUrl">
+                    </div>
+                </div>
+                <br>
+                <div class="field">
+                    <h2 class="subtitle is-2">Personalization</h2>
+
+                    <label class="label">Select a theme</label>
+                    <div class="control">
+                        <label class="radio">
+                            <input type="radio" name="theme" checked>
+                            <img src="https://cdn.dribbble.com/users/551602/screenshots/3129206/800x600-light_1x.png" alt="">
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="theme">
+                            <img src="https://cdn.dribbble.com/users/18069/screenshots/3667490/sourcetree_dark_mode_2x_1x.png" alt="">
+                        </label>
+                    </div>
+                </div>
+                <button class="button is-primary">Upload</button>
+            </form>
+        </div>
+    </div>
+{% endblock %}
